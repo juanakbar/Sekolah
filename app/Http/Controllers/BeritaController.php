@@ -3,17 +3,12 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\Prestasi;
 use App\Models\Berita;
 
 
 class BeritaController extends Controller
 {
-    public function index()
-    {   $data['beritas'] = Berita::all();
-        $data['prestasis'] = Prestasi::all();   
-        return view('website.beranda', $data);
-    }
+    
 
     public function berita()
     {   
@@ -31,12 +26,4 @@ class BeritaController extends Controller
             "title"  => "Home"
         ]);
     }
-
-    // public function prestasi()
-    // {
-    //     $prestasi = DB::table('prestasis')->get();
-    //     return view('website.beranda', [
-    //         "title"  => "Home"
-    //     ]);
-    // }
 }

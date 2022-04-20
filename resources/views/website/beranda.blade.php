@@ -178,7 +178,7 @@
             @foreach ($beritas as $berita)
             <div class="col-sm-6 col-md-4 mt-2 mb-3">
                 <div class="card">
-                    <img src="img/portal/no-image.png" class="card-img-top" alt="...">
+                    <img src="/img/portal/no-image.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$berita -> judul}}</h5>
                         <p class="card-text"> {{$berita -> excerpt}} </p>
@@ -199,24 +199,22 @@
     {{-- Start Prestai --}}
     <div class="container recent-blog-posts mt-5 mb-5" data-aos="slide-up">
         <header class="section-header">
-            <p>Prestasi</p>
+            <p>KONTOL</p>
         </header>
         @foreach ($prestasis as $prestasi)
         <div class="container recent-blog-posts mt-3 mb-5">
             <div class="col-sm-6 col-md-4 mt-2 mb-3">
                 <div class="post-box">
-                    <div class="post-img"><img src="img/portal/no-image.png" class="img-fluid" alt=""></div>
+                    <div class="post-img"><img src="/img/portal/no-image.png" class="img-fluid" alt=""></div>
                     <span class="post-date"> {{ $prestasi -> judul }} </span>
                     <h3 class="post-title">{{ $prestasi -> excerpt}}</h3>
-                    <a href="#" class="mt-auto btn btn-primary"><span>Read More</span><i
-                            class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         </div>
+        @endforeach
     </div>
-    @endforeach
     <div class="col-sm text-center mb-4 mt-5">
-        <a href="#" class="btn btn-outline-primary"> Tampilkan Semua Prestasi </a>
+        <a href="/beranda/prestasi" class="btn btn-outline-primary"> Tampilkan Semua Prestasi </a>
     </div>
     </div>
     </div>

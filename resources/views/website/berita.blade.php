@@ -7,7 +7,7 @@
             <nav style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb"
                 class="mt-5 margin-auto justify-content-center">
                 <ol class="breadcrumb ">
-                    <li class="breadcrumb-item"><a href="/beranda/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/beranda">Home</a></li>
                     <li class="breadcrumb-item"><a href="/beranda/berita">Berita</a></li>
                 </ol>
             </nav>

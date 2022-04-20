@@ -1,36 +1,28 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\PrestasiController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-Route::get('/', [BeritaController::class, 'index'])->name('beranda');
+// Route Untuk Ke halaman portal
+Route::get('/', function () {
+    return view('portal',[
+        "title" => "Portal"
+    ]);
+})->name('portal');
+// Route untuk ke halaman website
+Route::get('/beranda', [HomeController::class, 'index'])->name('beranda');
 
-// Route::get('/', function () {
-//     return view('portal',[
-//         "title" => "Portal"
-//     ]);
-// })->name('portal');
-
-Route::get('/beranda', [BeritaController::class, 'index'])->name('beranda');
+// Route untuk kehalaman berita
 Route::get('/beranda/berita', [BeritaController::class, 'berita']);
 Route::get('/berita/{berita:slug}', [BeritaController::class, 'show']);
 
-// Route::get('/beranda', [BeritaController::class, 'prestasi']);
+// Route Untuk Halaman Prestasi
+Route::get('/beranda/prestasi', [PrestasiController::class, 'index'])->name('prestasi');
 
 
-
-
-
+// Route untuk ke halaman Dashboard
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

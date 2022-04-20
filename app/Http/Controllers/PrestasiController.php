@@ -11,4 +11,10 @@ use App\Models\Prestasi;
 class PrestasiController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function index()
+    {   
+        $data['prestasis'] = Prestasi::all();   
+        return view('website.prestasi', $data);
+    }
 }
