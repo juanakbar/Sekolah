@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Orbitron:wght@700&family=Poppins&display=swap');
+*{
+    font-family: Poppins;
+}
+body{
+    background-image: url('/img/portal/bg-02.png');
+    background-color: bisque;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    font-family: Poppins;
+}
+
+.btn{
+    /* padding: 40px; */
+    width: 160px;
+    height: 144px;
+    margin: 10px;
+    font-weight: 400px;
+}
+
+.text{
+    margin-top: 150px;
+}
+.btn h4{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600px;
+}
+.text h1{
+    border-bottom: 5px solid wheat;
+    width: 50%;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.fa-5x{
+    margin-top: 26px;
+}
+
+.container .container-body .carousel {
+    width: 100%;
+    height: 100%;
+    /* justify-content: left; */
+    margin: 1%;
+}
+.carousel .carousel-inner {
+    border-radius: 5%;
+    margin-top: 50px;
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .text{
+        margin-top: 250px;
+    }
+
+    .me-2{
+        margin-right: -26.5rem!important;
+    }
+
+    .ms-2{
+        margin-left: 20rem!important;
+    }
+    .btn{
+        /* padding: 40px; */
+        width: 260px;
+        height: 244px;
+        margin: 10px;
+    }
+
+    .jumbotron{
+        height: 800px;
+        /* width: 1080px; */
+    }
+
+    .mt-0{
+        margin-top: 200px !important;
+    }
+    .container.container-body .carousel {
+        width: 100%;
+        height: 100%;        
+        /* float: left; */
+        margin-bottom: 5vh;
+    }
+    .container.container-body .row .col-lg t .container.container-body  .data-covid .row .col-lg {
+        font-size: small;
+    }
+    .container.container-body .data-covid .row .col-lg .card {
+        margin-top: 5vh;
+    }
+}
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 160px;
+  width: 144;
+  justify-content: center;
+  line-height: 24px;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 160px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
