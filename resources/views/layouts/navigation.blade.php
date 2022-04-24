@@ -18,10 +18,14 @@
                     <x-nav-link :href="route('berita')" :active="request()->routeIs('berita')">
                         {{ __('Berita') }}
                     </x-nav-link>
-                    <x-dropdown-link :href="route('logout')"
-                        onclick="event.preventDefault();this.closest('form').submit();">
-                        {{ __('Log Out') }}
-                    </x-dropdown-link>
+                    <x-nav-link>
+                        {{ __('Berita') }}
+                        <x-dropdown>
+                            <x-slot name="trigger">
+                                {{ __('Juan') }}
+                            </x-slot>
+                        </x-dropdown>
+                    </x-nav-link>
                 </div>
             </div>
 

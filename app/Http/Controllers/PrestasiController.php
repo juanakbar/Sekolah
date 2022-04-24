@@ -12,9 +12,9 @@ class PrestasiController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function index()
+    public function prestasi()
     {   
         $data['prestasis'] = Prestasi::all();   
-        return view('website.prestasi', $data);
+        return view('website.p', $data);
     }
 }

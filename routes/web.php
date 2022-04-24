@@ -19,7 +19,7 @@ Route::get('/beranda/berita', [BeritaController::class, 'berita']);
 Route::get('/berita/{berita:slug}', [BeritaController::class, 'show']);
 
 // Route Untuk Halaman Prestasi
-Route::get('/beranda/prestasi', [PrestasiController::class, 'index'])->name('prestasi');
+Route::get('/beranda/prestasi', [PrestasiController::class, 'prestasi'])->name('prestasi');
 
 
 // Route untuk ke halaman Dashboard

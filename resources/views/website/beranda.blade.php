@@ -199,19 +199,21 @@
     {{-- Start Prestai --}}
     <div class="container recent-blog-posts mt-5 mb-5" data-aos="slide-up">
         <header class="section-header">
-            <p>KONTOL</p>
+            <p>PANJI</p>
         </header>
-        @foreach ($prestasis as $prestasi)
-        <div class="container recent-blog-posts mt-3 mb-5">
-            <div class="col-sm-6 col-md-4 mt-2 mb-3">
-                <div class="post-box">
-                    <div class="post-img"><img src="/img/portal/no-image.png" class="img-fluid" alt=""></div>
-                    <span class="post-date"> {{ $prestasi -> judul }} </span>
-                    <h3 class="post-title">{{ $prestasi -> excerpt}}</h3>
+        <div class="row">
+            {{-- <div class="container recent-blog-posts mt-3 mb-5"> --}}
+                @foreach ($prestasis as $prestasi)
+                <div class="col-sm-6 col-md-4 mt-2 mb-3">
+                    <div class="post-box">
+                        <div class="post-img"><img src="/img/portal/no-image.png" class="img-fluid" alt=""></div>
+                        <span class="post-date"> {{ $prestasi -> judul }} </span>
+                        <h3 class="post-title">{{ $prestasi -> excerpt}}</h3>
+                    </div>
                 </div>
+                @endforeach
             </div>
         </div>
-        @endforeach
     </div>
     <div class="col-sm text-center mb-4 mt-5">
         <a href="/beranda/prestasi" class="btn btn-outline-primary"> Tampilkan Semua Prestasi </a>
