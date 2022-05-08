@@ -184,7 +184,8 @@
                         <p class="card-text"> {{$berita -> excerpt}} </p>
                         <a href="/berita/{{$berita -> slug}}" class="btn btn-outline-primary"> Read More</a>
                         <hr class="hr-content">
-                        <p class="card-text"><small class="text-muted">{{$berita -> created_at}}</small></p>
+<p class="card-text"><small class="text-muted">{{$berita ->
+                                created_at->diffForHumans()}}</small></p>
                     </div>
                 </div>
             </div>

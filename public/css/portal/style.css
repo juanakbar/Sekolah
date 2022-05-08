@@ -3,11 +3,12 @@
     font-family: Poppins;
 }
 body{
-    background-image: url('/img/portal/bg-02.png');
+    background-image: url('/img/portal/BACKWEB-ATAS.jpg');
     background-color: bisque;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     font-family: Poppins;
+    min-height: 100vh
 }
 
 .btn{
